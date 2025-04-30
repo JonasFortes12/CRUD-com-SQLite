@@ -1,0 +1,15 @@
+1. Repositório no GitHub e deu um clone.
+
+2. Iniciou o projeto node - 
+'npm init -y' 
+
+3. instalou pacotes:
+ - npm install express sqlite3
+ - npx prisma init
+
+4. configurou o schema.prisma
+
+5. npx prisma migrate dev --name init db
+
+6. executar o prisma studio
+  'npx prisma studio'
