@@ -20,7 +20,9 @@
   },
   "homepage": "https://github.com/JonasFortes12/CRUD-com-SQLite#readme",
   "dependencies": {
+    "@prisma/client": "^6.7.0",
     "express": "^5.1.0",
-    "sqlite3": "^5.1.7"
+    "prisma": "^6.7.0",
+    "zod": "^3.24.4"
   }
 }
