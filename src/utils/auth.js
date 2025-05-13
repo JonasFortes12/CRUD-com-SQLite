@@ -10,6 +10,11 @@ export async function hashPassword(password) {
 
 }
 
+export async function comparePassword(password, hashedPassword) {
+    return await bcrypt.compare(password, hashedPassword) 
+}
+
+
 export function generateToken(user) {
 
     return jwt.sign(
@@ -18,4 +23,8 @@ export function generateToken(user) {
         {expiresIn: '1h'}
     )
 
+}
+
+export function verifyToken(token) {
+    return jwt.verify(token, JWT_SECRET)
 }
